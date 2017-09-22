@@ -1,0 +1,23 @@
+h1 {
+02
+	  display: table;
+03
+	  margin: 0 auto;
+04
+	  font-family: "Roboto Slab";
+05
+	  font-weight: 400;
+06
+	  font-size: 6em;
+07
+	  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+08
+	  -webkit-background-clip: text;
+09
+	  -webkit-text-fill-color: transparent;
+10
+	  line-height: 200px;
+11
+	}
+
+from http://creative-punch.net/2014/02/colorful-gradient-text-css3/

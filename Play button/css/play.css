@@ -1,0 +1,31 @@
+.outer-circle {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.first-inner-triangle {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  width: 0px;
+  height: 0px;
+	border-left: 65px solid white;
+	border-top: 65px solid transparent;
+	border-bottom: 65px solid transparent;
+}
+
+.second-inner-triangle {
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  width: 0px;
+  height: 0px;
+	border-left: 50px solid red;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+}

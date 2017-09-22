@@ -1,0 +1,24 @@
+
+
+Well, you could place a canvas element inside of the div, maximize its height and width, set its position to relative and its z-index to a negative value.
+
+However, if you want to use a real CSS background-image:... you would have to create your image inside your canvas. You could then use toDataURL to get a data url which you could use as value for your original background-image:
+
+var canvas = document.getElementById('canvas');
+var data = canvas.toDataURL();
+var myElement = document.getElementById('myelement');
+
+myElement.style.backgroundImage = 'url('+data+')';
+
+If you don't want to create a new background but manipulate an existing one, load your original background into an Image object (or get a reference) and use drawImage:
+
+var image = new Image();
+image.onload = function(){
+    context.drawImage(this,0,0);
+    someCallbackToManipulateTheImage();
+}
+var src = myElement.style.backgroundImage.substr(4);
+src.substr(0,src.length - 1);
+image.src = src;
+
+

@@ -1,0 +1,13 @@
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+  background-image: radial-gradient(ellipse farthest-corner at 45px 45px ,
+    lightgreen 0%, green 90%);
+}
+
+.circle:hover {
+  cursor: pointer;
+  background-image: radial-gradient(ellipse farthest-corner at 145px 145px ,
+    lightgreen 0%, green 90%);
+}
