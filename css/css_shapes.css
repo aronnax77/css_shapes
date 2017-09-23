@@ -141,6 +141,7 @@ header h1 {
 }
 /* Circles ends */
 
+
 /******************************************************************************
   Elipses begins
 	Note: A similar effect is possible with padding left and right.
@@ -149,3 +150,21 @@ header h1 {
 	transform: scale(2, 1);
 }
 /* Elipses ends */
+
+
+/******************************************************************************
+  Rectangles begins
+******************************************************************************/
+.rect {
+	border-radius: 0px;
+}
+/* Rectangles ends */
+
+
+/******************************************************************************
+  Rectangles with round corners begins
+******************************************************************************/
+.rect-round-corners {
+	border-radius: 20%;
+}
+/* Rectangles with round corners ends */
