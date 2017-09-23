@@ -137,6 +137,15 @@ header h1 {
 
 .inlinebox {
   display: inline-block;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 /* Circles ends */
+
+/******************************************************************************
+  Elipses begins
+	Note: A similar effect is possible with padding left and right.
+******************************************************************************/
+.elipse {
+	transform: scale(2, 1);
+}
+/* Elipses ends */
