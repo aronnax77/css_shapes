@@ -10,6 +10,27 @@ header {
 	height: 300px;
 }
 
+body {
+	background-color: silver;
+}
+
+article {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: lightyellow;
+	height: 100vh;
+}
+
+section {
+	margin-top: 50px;
+	padding-left: 10%;
+}
+
+section h2 {
+	font-size: 30px;
+	font-style: bold;
+}
+
 /******************************************************************************
  Left animated circle begins
 ******************************************************************************/
@@ -84,7 +105,38 @@ header h1 {
 /* Right animated circle ends */
 
 
+/******************************************************************************
+ Circles begins
+******************************************************************************/
+.red-circle {
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.green-circle {
+	top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.blue-circle {
+	top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
 .inlinebox {
   display: inline-block;
   margin-left: 100px;
 }
+/* Circles ends */
