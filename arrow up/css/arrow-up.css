@@ -1,16 +1,37 @@
-/*div.arrow-up {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;  /* left arrow slant */
-	/*border-right: 25px solid transparent; /* right arrow slant */
-	/*border-bottom: 25px solid #2f2f2f; /* bottom, add background color here */
-  /*font-size: 0;
-	line-height: 0;
-}*/
-
 div.arrow-up {
+  height: 0px;
   width: 0px;
-	border-left: 25px solid transparent;  /* left arrow slant */
-	border-right: 25px solid transparent; /* right arrow slant */
-	border-bottom: 25px solid red; /* bottom, add background color here */
+	border-left: 60px solid transparent;  /* left arrow slant */
+	border-right: 60px solid transparent; /* right arrow slant */
+	border-bottom: 60px solid red; /* bottom, add background color here */
+}
+
+div.arrow-down {
+  height: 0px;
+  width: 0px;
+	border-left: 60px solid transparent;  /* left arrow slant */
+	border-right: 60px solid transparent; /* right arrow slant */
+	border-top: 60px solid green; /* bottom, add background color here */
+}
+
+div.arrow-left {
+  height: 0px;
+  width: 0px;
+	border-top: 60px solid transparent;  /* left arrow slant */
+	border-bottom: 60px solid transparent; /* right arrow slant */
+	border-right: 60px solid blue; /* bottom, add background color here */
+}
+
+div.arrow-right {
+  height: 0px;
+  width: 0px;
+	border-top: 60px solid transparent;  /* left arrow slant */
+	border-bottom: 60px solid transparent; /* right arrow slant */
+	border-left: 60px solid yellow; /* bottom, add background color here */
+}
+
+
+.inlinebox {
+  display: inline-block;
+  margin-left: 150px;
 }
