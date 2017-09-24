@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Reference external style sheets -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
   <link rel="stylesheet" href="css/css_shapes.css">
+  <script src="js/css_shapes.js"></script>
   <meta charset="UTF-8">
   <title>CSS Shapes</title>
 </head>
 <body>
+  <!-- Header with two simple animations and text -->
   <header>
     <div class="animated-circle position-left"></div>
     <h1>CSS SHAPES</h1>
     <div class="animated-circle position-right"></div>
   </header>
+
+  <!-- Article complises info and five shape sections -->
   <article>
-    <section id="info">Info</section>
+    <!-- Information about this demo -->
+    <section class="info">
+      <p><a href='#' id='info' onclick="showInfo()"><i class="material-icons">
+      info</i></a></p>
+
+      <div id='description-text'>
+
+        <p>The shapes on this page are not images.  They are created using css
+           only.  Perhaps the most surprising of these shapes are the triangles
+           which are shown at the end of the display.  Once the basic ideas
+           regarding these shapes is understood it is possible to use them  for
+           a number of purposes including the simple animations shown in the
+           title bar.  With imagination it is possible to combine shapes into
+           all manner of images.</p>
+
+        <p>This particular page was inspired by an article written
+           by <a href='https://davidwalsh.name/css-circles'>David Walsh</a>
+           who presents a number of interesting articles on the use of css in
+           his blog pages DWB.
+        </p>
+        <p class='advisory-text'>To close this pannel please left click the info icon
+           agian.</p>
+
+      </div>
+
+  </section>
+
+    <!-- Section illustrating circles -->
     <section>
-      <h2>Plain circles</h2>
+      <h2>Circles</h2>
       <div class="red-circle inlinebox"></div>
       <div class="green-circle inlinebox"></div>
       <div class="blue-circle inlinebox"></div>
     </section>
+
+    <!-- Section illustrating elipses -->
     <section>
       <h2>Elipses</h2>
       <div class="red-circle inlinebox elipse"></div>
       <div class="green-circle inlinebox elipse"></div>
       <div class="blue-circle inlinebox elipse"></div>
     </section>
+
+    <!-- Section illustrating rectangles and squares -->
     <section>
       <h2>Rectangles and squares</h2>
       <div class="red-rect inlinebox rect"></div>
       <div class="green-rect inlinebox rect"></div>
       <div class="blue-rect inlinebox rect"></div>
     </section>
+
+    <!-- Section illustrating rounded rectangles and squares -->
     <section>
       <h2>Rounded rectangles and squares</h2>
       <div class="red-rect inlinebox rect-round-corners"></div>
       <div class="green-rect inlinebox rect-round-corners"></div>
       <div class="blue-rect inlinebox rect-round-corners"></div>
     </section>
+
+    <!-- Section illustrating triangles -->
     <section>
       <h2>Triangles</h2>
       <div class="arrow-up inlinebox"></div>

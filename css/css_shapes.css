@@ -2,6 +2,7 @@
 TABLE OF CONTENTS
 
 GENERAL STYLING                - html elements and shared styles
+INFO ICON                      - Info icon and related text
 HEADER ANIMATED CIRCLE         - Header decoration
 HEADER H1 ELEMENT              - Heading
 CIRCLES                        - Styling for circles
@@ -13,13 +14,15 @@ TRIANGLES                      - Styling for triangles
 
 COLOUR PALETTE
 
-silver      - background and header
-lightyellow - background for article
-red         - colour for shapes
-green       - colour for shapes
-blue        - colour for shapes
-yellow      - colour for shapes and animation
-orange      - for animation
+silver             - background and header
+lightyellow        - background for article
+red                - colour for shapes
+green              - colour for shapes
+blue               - colour for shapes
+yellow             - colour for shapes and animation
+orange             - for animation
+rgb(230, 230, 230) - light grey background to information panel
+rgb(100, 100, 100) - darker grey text in information panel
 ***/
 
 
@@ -39,6 +42,7 @@ body {
 
 article {
 	background-color: lightyellow;
+	border-radius: 15px;
 }
 
 section {
@@ -48,12 +52,7 @@ section {
 
 section h2 {
 	font-size: 30px;
-	font-style: bold;
-}
-
-div {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	font-weight: bold;
 }
 
 /* this rule lines the shapes horizontally and spaces them */
@@ -62,6 +61,40 @@ div {
   margin-left: 100px;
 }
 /* General styling ends */
+
+
+/******************************************************************************
+ Style info icon begins
+******************************************************************************/
+.material-icons {
+  font-size: 50px;
+}
+
+.info {
+  text-align: right;
+	padding-top: 30px;
+  padding-right: 30px;
+}
+
+#description-text {
+  position: relative;
+	width: 80%;
+  display: none;
+	overflow: hidden;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 15px;
+  background-color: rgb(230, 230, 230);
+  color: rgb(100, 100, 100);
+  font-size: 16px;
+}
+
+.advisory-text {
+  text-align: right;
+  font-style: italic;
+  font-size: 12px;
+}
+/* Style info icon ends */
 
 
 /******************************************************************************
