@@ -1,13 +1,36 @@
+/***
+TABLE OF CONTENTS
+
+GENERAL STYLING                - html elements and shared styles
+HEADER ANIMATED CIRCLE         - Header decoration
+HEADER H1 ELEMENT              - Heading
+CIRCLES                        - Styling for circles
+ELIPSES                        - Styling for elipses
+SQARES AND RECTANGLES          - Styling for squares and rectangles
+ROUNDED SQUARES AND RECTANGLES - Styling for rounded squares and rectangles
+TRIANGLES                      - Styling for triangles
+
+
+COLOUR PALETTE
+
+silver      - background and header
+lightyellow - background for article
+red         - colour for shapes
+green       - colour for shapes
+blue        - colour for shapes
+yellow      - colour for shapes and animation
+orange      - for animation
+***/
+
+
 
 /*############################################################################
-
-#############################  header  #######################################
-
+  General styling begins
 #############################################################################*/
 
 header {
 	background-color: silver;
-	height: 300px;
+	height: 200px;
 }
 
 body {
@@ -16,12 +39,10 @@ body {
 
 article {
 	background-color: lightyellow;
-	height: 100%;
 }
 
 section {
 	margin-top: 70px;
-	/*padding-bottom: 30px;*/
 	padding-left: 10%;
 }
 
@@ -35,26 +56,26 @@ div {
 	margin-bottom: 30px;
 }
 
+/* this rule lines the shapes horizontally and spaces them */
 .inlinebox {
   display: inline-block;
   margin-left: 100px;
 }
+/* General styling ends */
+
 
 /******************************************************************************
- Left animated circle begins
+ Header animated circle begins
 ******************************************************************************/
-.left-animated-circle {
-	position: relative;
-	top: 50px;
-	left: 50px;
+header .animated-circle {
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
   background-image: radial-gradient(ellipse farthest-corner at 145px 45px ,
     yellow 0%, orange 90%);
 
     animation-name: spin;
-  	animation-duration: 8s; /* 3 seconds */
+  	animation-duration: 4s; /* 3 seconds */
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
 }
@@ -64,7 +85,20 @@ div {
 	0%   { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
-/* Left animated circle ends */
+
+.animated-circle.position-left {
+	position: absolute;
+	top: 50px;
+	left: 5vw;
+}
+
+.animated-circle.position-right {
+	position: absolute;
+	top: 50px;
+	right: 5vw;
+}
+/* Animated circle ends */
+
 
 /******************************************************************************
  Header h1 element begins
@@ -72,46 +106,13 @@ div {
 header h1 {
   position: absolute;
 	top: 50px;
-	left: calc(50% - 300px);
-	font-size: 80px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 4vw;
 	font-family: arial;
 	/*border: 2px solid red;*/
 }
 /* Header h1 element ends */
-
-/******************************************************************************
- Right animated circle begins
-******************************************************************************/
-.outer-circle {
-  position: absolute;
-  top: 50px;
-  right: 100px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: blue;
-}
-
-.first-inner-circle {
-  position: absolute;
-  top: 45px;
-  left: 45px;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.second-inner-circle {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: red;
-}
-/* Right animated circle ends */
 
 
 /******************************************************************************
@@ -200,32 +201,32 @@ header h1 {
 div.arrow-up {
   height: 0px;
   width: 0px;
-	border-left: 60px solid transparent;  /* left arrow slant */
-	border-right: 60px solid transparent; /* right arrow slant */
-	border-bottom: 60px solid red; /* bottom, add background color here */
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 60px solid red;
 }
 
 div.arrow-down {
   height: 0px;
   width: 0px;
-	border-left: 60px solid transparent;  /* left arrow slant */
-	border-right: 60px solid transparent; /* right arrow slant */
-	border-top: 60px solid green; /* bottom, add background color here */
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 60px solid green;
 }
 
 div.arrow-left {
   height: 0px;
   width: 0px;
-	border-top: 60px solid transparent;  /* left arrow slant */
-	border-bottom: 60px solid transparent; /* right arrow slant */
-	border-right: 60px solid blue; /* bottom, add background color here */
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-right: 60px solid blue;
 }
 
 div.arrow-right {
   height: 0px;
   width: 0px;
-	border-top: 60px solid transparent;  /* left arrow slant */
-	border-bottom: 60px solid transparent; /* right arrow slant */
-	border-left: 60px solid yellow; /* bottom, add background color here */
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid yellow;
 }
 /* Triangles ends */
