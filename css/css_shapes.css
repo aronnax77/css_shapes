@@ -1,4 +1,4 @@
-/***
+/******************************************************************************
 TABLE OF CONTENTS
 
 GENERAL STYLING                - html elements and shared styles
@@ -23,13 +23,16 @@ yellow             - colour for shapes and animation
 orange             - for animation
 rgb(230, 230, 230) - light grey background to information panel
 rgb(100, 100, 100) - darker grey text in information panel
-***/
+
+Note: https://autoprefixer.github.io was used to add the prefixed additions in
+      the code below.
+******************************************************************************/
 
 
 
-/*############################################################################
+/******************************************************************************
   General styling begins
-#############################################################################*/
+******************************************************************************/
 
 header {
 	background-color: silver;
@@ -43,6 +46,7 @@ body {
 article {
 	background-color: lightyellow;
 	border-radius: 15px;
+	padding-bottom: 50px;
 }
 
 section {
@@ -66,6 +70,7 @@ section h2 {
 /******************************************************************************
  Style info icon begins
 ******************************************************************************/
+/* This class is provided by googles material-icons */
 .material-icons {
   font-size: 50px;
 }
@@ -76,7 +81,7 @@ section h2 {
   padding-right: 30px;
 }
 
-#description-text {
+#information-text {
   position: relative;
 	width: 80%;
   display: none;
@@ -104,19 +109,32 @@ header .animated-circle {
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
+  background-image: -webkit-radial-gradient(ellipse farthest-corner at 145px 45px ,
+    yellow 0%, orange 90%);
+  background-image: -o-radial-gradient(ellipse farthest-corner at 145px 45px ,
+    yellow 0%, orange 90%);
   background-image: radial-gradient(ellipse farthest-corner at 145px 45px ,
     yellow 0%, orange 90%);
 
-    animation-name: spin;
-  	animation-duration: 4s; /* 3 seconds */
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
+    -webkit-animation-name: spin;
+
+            animation-name: spin;
+  	-webkit-animation-duration: 4s;
+  	        animation-duration: 4s; /* 3 seconds */
+  	-webkit-animation-iteration-count: infinite;
+  	        animation-iteration-count: infinite;
+  	-webkit-animation-timing-function: linear;
+  	        animation-timing-function: linear;
 }
 
 /* Create the animation blocks */
+@-webkit-keyframes spin {
+	0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
 @keyframes spin {
-	0%   { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+	0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 
 .animated-circle.position-left {
@@ -140,7 +158,9 @@ header h1 {
   position: absolute;
 	top: 50px;
 	left: 50%;
-	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	    -ms-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
 	font-size: 4vw;
 	font-family: arial;
 	/*border: 2px solid red;*/
@@ -185,7 +205,9 @@ header h1 {
 	Note: A similar effect is possible with padding left and right.
 ******************************************************************************/
 .elipse {
-	transform: scale(1.5, 1);
+	-webkit-transform: scale(1.5, 1);
+	    -ms-transform: scale(1.5, 1);
+	        transform: scale(1.5, 1);
 }
 /* Elipses ends */
 
