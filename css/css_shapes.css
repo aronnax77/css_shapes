@@ -6,6 +6,8 @@ INFO ICON                      - Info icon and related text
 HEADER ANIMATED CIRCLE         - Header decoration
 HEADER H1 ELEMENT              - Heading
 CIRCLES                        - Styling for circles
+SEMICIRCLES                    - Styling for semicircles
+QUADRANTS                      - Styling for quadrants
 ELIPSES                        - Styling for elipses
 SQARES AND RECTANGLES          - Styling for squares and rectangles
 ROUNDED SQUARES AND RECTANGLES - Styling for rounded squares and rectangles
@@ -198,6 +200,72 @@ header h1 {
   background-color: blue;
 }
 /* Circles ends */
+
+
+/******************************************************************************
+ Circles begins
+******************************************************************************/
+.red-semicircle {
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 100px;
+  border-radius: 50px 0 0 50px;
+  background-color: red;
+}
+
+.green-semicircle {
+	top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 30px;
+  border-radius: 0 0 30px 30px;
+	transform: rotate(45deg);
+  background-color: green;
+}
+
+.blue-semicircle {
+	top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 40px;
+  border-radius: 0 20px 20px 0;
+  background-color: blue;
+}
+/* Semiircles ends */
+
+
+/******************************************************************************
+ Quadrant begins
+******************************************************************************/
+.red-quadrant {
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 0 100px;
+  background-color: red;
+}
+
+.green-quadrant {
+	top: 0px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 0 60px 0;
+	transform: rotate(45deg);
+  background-color: green;
+}
+
+.blue-quadrant {
+	top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 40px 0 0;
+  background-color: blue;
+}
+/* Quadrant ends */
 
 
 /******************************************************************************
